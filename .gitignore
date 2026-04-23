@@ -41,3 +41,13 @@ logs/
 # Data / artifacts (사용자 인터뷰 원본·모델 캐시는 로컬에만 두려면 개별 규칙 추가)
 tmp/
 scratch/
+
+# 사용자 리서치 원본 — 공개 저장소에는 익명화된 요약만 커밋
+01_research/user_interviews/notes/
+01_research/user_interviews/participants_tracker.md
+01_research/user_interviews/recordings/
+01_research/user_interviews/transcripts/
+
+# 공개하지 않는 개인 작업 메모
+_private/
+*.private.md

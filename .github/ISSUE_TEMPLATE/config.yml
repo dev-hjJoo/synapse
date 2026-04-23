@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 일반 토론 (General Discussion)
+    url: https://github.com/dev-hjJoo/synapse/discussions
+    about: 아이디어·질문·피드백은 Discussions에서 먼저 시작해 보세요.
