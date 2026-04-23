@@ -58,9 +58,9 @@ Synapse는 단일 오너가 주도하되, 각 단계에서 전문 역할의 "모
 
 ## 2. 역할 전환 규칙
 
-- 문서·코드 커밋 시 작성자 역할을 명시: `[PM] PRD 초안`, `[AI/ML] 논문 청킹 RFC`.
 - 역할을 바꿀 때는 직전 역할의 산출물을 참조하고, 어떤 결정을 이어받았는지 문서 상단에 기록.
 - 역할 간 충돌(예: PM이 원하는 기능 vs Architect의 기술 제약)은 **ADR** 로 해결.
+- 커밋 메시지는 [Conventional Commits](https://www.conventionalcommits.org/) 영문 — `type(scope): subject` 형식. 자세한 규칙은 [CONTRIBUTING](../CONTRIBUTING.md#커밋-메시지-규칙) 참고.
 
 ## 3. 의사결정
 

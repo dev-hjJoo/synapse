@@ -66,7 +66,7 @@ Synapse는 현재 **단일 오너** 가 주도하지만, 작업 단위로 아래
 - **질문 / 토론** → [`Discussion` 이슈](../../issues/new?template=discussion.md) 또는 Discussions
 - **오탈자 / 링크 / 사실 오류** → [`Doc Fix` 이슈](../../issues/new?template=doc_fix.md) 또는 Pull Request
 
-커밋 메시지 형식(`[역할] 요약`)·PR 체크리스트 등 자세한 규칙은 [CONTRIBUTING](CONTRIBUTING.md) 을 참고해 주세요. 모든 상호작용은 [Code of Conduct](CODE_OF_CONDUCT.md) 를 따릅니다.
+커밋 메시지([Conventional Commits](https://www.conventionalcommits.org/), 영문)·PR 체크리스트 등 자세한 규칙은 [CONTRIBUTING](CONTRIBUTING.md) 을 참고해 주세요. 모든 상호작용은 [Code of Conduct](CODE_OF_CONDUCT.md) 를 따릅니다.
 
 ## 라이선스
 
