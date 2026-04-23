@@ -68,14 +68,17 @@ last_updated: 2026-04-24
 
 ## Commit / PR 규칙
 
+- **모든 변경은 feature 브랜치 → Pull Request 를 통해 머지**. `main` 직접 커밋 금지.
 - 커밋 메시지는 [Conventional Commits](https://www.conventionalcommits.org/) — `type(scope): subject` 형식, **영문**.
   - 예: `docs(product): add vision v0.1`, `docs(arch): propose embedding model RFC`
-- PR 제목도 같은 형식. 본문에 **무엇을·왜** 변경했는지 기록.
-- 자세한 형식·Type·Scope 표는 [CONTRIBUTING](../CONTRIBUTING.md#커밋-메시지-규칙) 참고.
+- PR 제목도 같은 형식 (CI 에서 검증). 본문에 **무엇을·왜** 변경했는지 기록.
+- [CodeRabbit](https://coderabbit.ai/) 이 PR 을 자동 리뷰. Squash merge 권장.
+- 자세한 형식·Type·Scope 표·개발 세팅은 [CONTRIBUTING](../CONTRIBUTING.md) 참고.
 - PR 체크리스트:
   - [ ] frontmatter 업데이트 (`last_updated`, 필요 시 `status`/`version`)
   - [ ] 링크 깨짐 확인
   - [ ] 관련 ADR·RFC 교차 참조
+  - [ ] `pre-commit run --all-files` 통과
 
 ## ADR (Architecture Decision Record)
 
