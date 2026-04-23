@@ -1,0 +1,24 @@
+# markdownlint rules — see https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md
+default: true
+
+# Line length — we use tables and long prose; rely on editor soft-wrap
+MD013: false
+
+# Inline HTML — allowed (mermaid, details, badges)
+MD033: false
+
+# First line should be H1 — we use YAML frontmatter first
+MD041: false
+
+# Duplicate heading text allowed under different parent headings
+MD024:
+  siblings_only: true
+
+# Bare URLs allowed (footnotes/references)
+MD034: false
+
+# Bold-as-heading allowed for emphasis within lists
+MD036: false
+
+# Allow inline code blocks without language in quick notes
+MD040: false

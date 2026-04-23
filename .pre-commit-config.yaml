@@ -1,0 +1,40 @@
+# Synapse — pre-commit hooks
+# Install:  pipx install pre-commit && pre-commit install && pre-commit install --hook-type commit-msg
+# Update:   pre-commit autoupdate
+# Run all:  pre-commit run --all-files
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-added-large-files
+        args: ["--maxkb=5000"]
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: check-json
+        exclude: ^\.vscode/
+
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.17.2
+    hooks:
+      - id: markdownlint-cli2
+
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v3.6.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+        args:
+          - --strict
+          - feat
+          - fix
+          - docs
+          - refactor
+          - test
+          - chore
+          - style
+          - ci
+          - build
+          - perf
